@@ -7,10 +7,14 @@
 		*{
 			box-sizing:border-box;
 		}
+		body{
+			padding:0;
+			background-color: rgb(238,238,238);
+		}
 		#page{
 			width:1000px;
 			margin:30px auto;
-			background-color: rgba(228,228,228,.5);
+			background-color: rgb(238,238,238);
 			position:relative;
 			
 		}
@@ -19,6 +23,7 @@
 			display:flex;
 			line-height:41px;
 			justify-content:space-between;
+/*			position:fixed;*/
 		}
 		.search{
 			border:1px solid #0aa1ed;
@@ -26,18 +31,20 @@
 		
 		}
 		[type="search"]{
+			background-color: rgb(238,238,238);
+			color:black;
 			border:0;
 			outline:0;
-			height:39px;width:387px;
+			height:39px;width:320px;
 			padding:5px;
 		}
 		select{
 			-webkit-appearance:none;
 			background: url("./img/header_normal.png") no-repeat right center;
 			border:0;
-			font:bold 16px "黑体";
+			font:normal 14px "黑体";
 			color:#ccc;
-			width:50px;
+			width:78px;
 			outline:0;
 		}
 		.searchbutton{
@@ -45,7 +52,7 @@
 			background: #0aa1ed;
 		}
 		.logreg{
-			margin-left:70px;
+			margin-left:150px;
 			padding:0;
 			list-style:none;
 			display:flex;
@@ -68,7 +75,7 @@
 			<div class="search">
 				<input type="search" placeholder="请输入您要搜索的内容">
 				<select name="" id="">
-					<option value="">web</option>
+					<option value="">分类搜索</option>
 					<option value="">java</option>
 					<option value="">php</option>
 					<option value="">python</option>
